@@ -1,0 +1,8 @@
+CHIP Mux4Way
+{
+	in a, b, c, d, sel[2];
+	out out;
+	PARTS:
+	Not(in=sel[0], out=nsel0);
+	Not(in=sel[1], out=nsel1);
+
